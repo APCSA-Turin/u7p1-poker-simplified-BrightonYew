@@ -9,14 +9,14 @@ public class Player{
     String[] ranks = Utility.getRanks();
     
     public Player(){
-        hand = new ArrayList<>();
+        hand = new ArrayList<Card>();
     }
 
     public ArrayList<Card> getHand(){return hand;}
     public ArrayList<Card> getAllCards(){return allCards;}
 
     public void addCard(Card c){
-        
+        hand.add(c);
     }
 
     public String playHand(ArrayList<Card> communityCards){      
