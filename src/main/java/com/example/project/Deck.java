@@ -21,7 +21,7 @@ public class Deck{
 
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 13; j++) {
-                cards.add(new Card(rank[j], suit[i]));
+                cards.add(new Card(ranks[j], suits[i]));
             }
         }
     }
@@ -34,9 +34,8 @@ public class Deck{
         if (isEmpty()) {
             return null;
         }
-        Card topCard = cards.get(0);
-        cards.remove(0);
-        return topCard;
+
+        return cards.remove(0);
 
     }
 
@@ -45,6 +44,6 @@ public class Deck{
     }
 
    
-
+    
 
 }
